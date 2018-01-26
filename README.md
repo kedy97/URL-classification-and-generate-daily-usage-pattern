@@ -1,3 +1,4 @@
 # URL-classification-and-generate-daily-usage-pattern
 This is a project from SUTD Data & Business Analytics subject where I worked in a team of 5 students to find a way to classify URLs under IAB categories and gain insights about users' behaviour based on only their browsing history. I personally focused on preprocessing the dataset we received from the company and web-scraping the URLs.
+
 The URLs that lead directly to images were scraped with the help of Microsoft Azure Computer Vision API. Porn-related images were filtered out of the csv file by checking whether the domain of each image is included in the domains inside the PornDomains csv file. The duplicates of each of the URLs were also removed by simply using set in python. This is to reduce the number of images needed to process since I was using a free Microsoft Azure account so there is no point wasting my free trials on scraping unnecessary URLs.
